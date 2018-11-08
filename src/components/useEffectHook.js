@@ -18,9 +18,9 @@ const UseEffectHook = (props) => {
     // })
 
     // 2.didUpdate只會執行有設定的參數
-    // useEffect((e) => {
-    //     document.title = `click ${count} times ${name}`;
-    // }, [count])
+    useEffect((e) => {
+        document.title = `click ${count} times ${name}`;
+    }, [count])
 
     
     // 3.空陣列didUpdate都不會執行
