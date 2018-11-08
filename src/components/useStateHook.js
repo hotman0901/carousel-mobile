@@ -5,7 +5,7 @@ const UseStateHook = (props) => {
     // 可以直接代初始值
     const [count, setCount] = useState(10);
 
-    // 也可以帶function 去做判斷
+    // 也可以return function 去做判斷
     // const [count, setCount] = useState(() => {
     //     return 10;
     // });

@@ -31,7 +31,7 @@ export default class ContextParent extends Component {
         const { yoyo } = this.state;
         return (
             <Provider value={yoyo}>
-                <h3>contextApi</h3>
+                <h3>contextApi-parent：{yoyo.age}</h3>
                 <ContextMidd />
                 <hr />
                 <button

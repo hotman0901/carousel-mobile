@@ -10,7 +10,7 @@ export default class ContextMidd extends Component {
     render() {
         return (
             <div className="class-name">
-                <h4>midd</h4>
+                <h4>contextMidd</h4>
                 <ContextChild />
             </div>
         );
