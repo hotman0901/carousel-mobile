@@ -30,3 +30,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.menuList
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu
+{
+  padding: 20px;
+  cursor: pointer;
+}
