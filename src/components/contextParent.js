@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Provider } from './contextObj';
+import AppContext from './contextObj';
 import ContextMidd from './contextMidd';
 
 export default class ContextParent extends Component {
@@ -30,7 +30,7 @@ export default class ContextParent extends Component {
         // Provider通过value来传递数据
         const { yoyo } = this.state;
         return (
-            <Provider value={yoyo}>
+            <AppContext.Provider value={yoyo}>
                 <h3>contextApi-parent：{yoyo.age}</h3>
                 <ContextMidd />
                 <hr />
@@ -41,7 +41,7 @@ export default class ContextParent extends Component {
                 >
                     + 1
                 </button>
-            </Provider>
+            </AppContext.Provider>
         );
     }
 }

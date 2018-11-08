@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Consumer } from './contextObj';
+import AppContext from './contextObj';
 
 export default class ContextChild extends Component {
     constructor(props) {
@@ -9,7 +9,7 @@ export default class ContextChild extends Component {
     
     render() {
         return (
-            <Consumer>
+            <AppContext.Consumer>
                 {(yoyo) => {
                     console.log(yoyo);
                     return (
@@ -20,7 +20,7 @@ export default class ContextChild extends Component {
                         </div>
                     );
                 }}
-            </Consumer>
+            </AppContext.Consumer>
         );
     }
 }
