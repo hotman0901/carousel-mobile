@@ -6,15 +6,16 @@ export default class ContextChild extends Component {
         super(props);
         this.state = {};
     }
+    
     render() {
         return (
             <Consumer>
-                {(o) => {
-                    console.log(o);
+                {(yoyo) => {
+                    console.log(yoyo);
                     return (
                         <div>
                             <h5>
-                                contextChild - {o.name}：{o.age}
+                                contextChild - {yoyo.name}：{yoyo.age}
                             </h5>
                         </div>
                     );

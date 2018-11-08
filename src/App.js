@@ -9,7 +9,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            template: 'useState'
+            template: 'contextApi'
         };
     }
 
@@ -57,6 +57,14 @@ class App extends Component {
                         <div
                             className="menu"
                             onClick={() => {
+                                this.changeTemplate('contextApi');
+                            }}
+                        >
+                            contextApi
+                        </div>
+                        <div
+                            className="menu"
+                            onClick={() => {
                                 this.changeTemplate('useState');
                             }}
                         >
@@ -69,14 +77,6 @@ class App extends Component {
                             }}
                         >
                             useEffect
-                        </div>
-                        <div
-                            className="menu"
-                            onClick={() => {
-                                this.changeTemplate('contextApi');
-                            }}
-                        >
-                            contextApi
                         </div>
                     </div>
                     {this.renderTemplate()}
