@@ -11,7 +11,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            template: 'iconScroll'
+            template: 'betterScroll'
         };
     }
 
@@ -66,49 +66,49 @@ class App extends Component {
         }
     }
 
-    render() {
-        return (
-            <div>
-                {this.renderTemplate()}
-            </div>
-        );
-    }
-
     // render() {
     //     return (
-    //         <div className="App">
-    //             <header className="App-header">
-    //                 <div className="menuList">
-    //                     <div
-    //                         className="menu"
-    //                         onClick={() => {
-    //                             this.changeTemplate('contextApi');
-    //                         }}
-    //                     >
-    //                         contextApi
-    //                     </div>
-    //                     <div
-    //                         className="menu"
-    //                         onClick={() => {
-    //                             this.changeTemplate('useState');
-    //                         }}
-    //                     >
-    //                         useState
-    //                     </div>
-    //                     <div
-    //                         className="menu"
-    //                         onClick={() => {
-    //                             this.changeTemplate('useEffect');
-    //                         }}
-    //                     >
-    //                         useEffect
-    //                     </div>
-    //                 </div>
-    //                 {this.renderTemplate()}
-    //             </header>
+    //         <div>
+    //             {this.renderTemplate()}
     //         </div>
     //     );
     // }
+
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <div className="menuList">
+                        <div
+                            className="menu"
+                            onClick={() => {
+                                this.changeTemplate('contextApi');
+                            }}
+                        >
+                            contextApi
+                        </div>
+                        <div
+                            className="menu"
+                            onClick={() => {
+                                this.changeTemplate('useState');
+                            }}
+                        >
+                            useState
+                        </div>
+                        <div
+                            className="menu"
+                            onClick={() => {
+                                this.changeTemplate('useEffect');
+                            }}
+                        >
+                            useEffect
+                        </div>
+                    </div>
+                    {this.renderTemplate()}
+                </header>
+            </div>
+        );
+    }
 }
 
 export default App;
