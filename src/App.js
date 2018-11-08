@@ -4,12 +4,14 @@ import UseStateHook from './components/useStateHook';
 import UseEffectHook from './components/useEffectHook';
 import Count from './components/count';
 import ContextParent from './components/contextParent';
+import BetterScroll from './components/betterScroll';
+
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            template: 'contextApi'
+            template: 'betterScroll'
         };
     }
 
@@ -44,6 +46,14 @@ class App extends Component {
                         <ContextParent />
                     </div>
                 );
+
+            case 'betterScroll':
+                return (
+                    <div>
+                        <BetterScroll />
+                    </div>
+                );
+                
             default:
                 break;
         }
@@ -51,39 +61,47 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                    <div className="menuList">
-                        <div
-                            className="menu"
-                            onClick={() => {
-                                this.changeTemplate('contextApi');
-                            }}
-                        >
-                            contextApi
-                        </div>
-                        <div
-                            className="menu"
-                            onClick={() => {
-                                this.changeTemplate('useState');
-                            }}
-                        >
-                            useState
-                        </div>
-                        <div
-                            className="menu"
-                            onClick={() => {
-                                this.changeTemplate('useEffect');
-                            }}
-                        >
-                            useEffect
-                        </div>
-                    </div>
-                    {this.renderTemplate()}
-                </header>
+            <div>
+                {this.renderTemplate()}
             </div>
         );
     }
+
+    // render() {
+    //     return (
+    //         <div className="App">
+    //             <header className="App-header">
+    //                 <div className="menuList">
+    //                     <div
+    //                         className="menu"
+    //                         onClick={() => {
+    //                             this.changeTemplate('contextApi');
+    //                         }}
+    //                     >
+    //                         contextApi
+    //                     </div>
+    //                     <div
+    //                         className="menu"
+    //                         onClick={() => {
+    //                             this.changeTemplate('useState');
+    //                         }}
+    //                     >
+    //                         useState
+    //                     </div>
+    //                     <div
+    //                         className="menu"
+    //                         onClick={() => {
+    //                             this.changeTemplate('useEffect');
+    //                         }}
+    //                     >
+    //                         useEffect
+    //                     </div>
+    //                 </div>
+    //                 {this.renderTemplate()}
+    //             </header>
+    //         </div>
+    //     );
+    // }
 }
 
 export default App;
