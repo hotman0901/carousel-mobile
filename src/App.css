@@ -43,3 +43,26 @@
   padding: 20px;
   cursor: pointer;
 }
+
+
+.iconWrapper
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.iconWrapper > .icon
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

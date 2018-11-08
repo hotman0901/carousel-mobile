@@ -5,13 +5,13 @@ import UseEffectHook from './components/useEffectHook';
 import Count from './components/count';
 import ContextParent from './components/contextParent';
 import BetterScroll from './components/betterScroll';
-
+import IconScroll from './components/iconScroll';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            template: 'betterScroll'
+            template: 'iconScroll'
         };
     }
 
@@ -53,6 +53,13 @@ class App extends Component {
                         <BetterScroll />
                     </div>
                 );
+            case 'iconScroll':
+                return (
+                    <div>
+                        <IconScroll />
+                    </div>
+                );  
+
                 
             default:
                 break;

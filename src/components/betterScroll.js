@@ -17,7 +17,7 @@ export default class BetterScroll extends Component {
 
     render() {
         return (
-            <div style={{ height: '180px', backgroundColor: '#fff' }} className="carouselWrapper">
+            <div style={{ width: '340px', height: '180px', backgroundColor: '#fff' }} className="carouselWrapper">
                 <Carousel loop auto widgets={[IndicatorDots]}>
                     <div style={{ height: '100%',  backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: `url(${banner})` }}>
                         Frame 1
