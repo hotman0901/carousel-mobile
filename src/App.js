@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import UseStateHook from './components/useStateHook';
 import UseEffectHook from './components/useEffectHook';
@@ -10,7 +9,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            template: 'contextApi'
+            template: 'useState'
         };
     }
 
